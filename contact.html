@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Contact Us</h1>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="sementic.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+         <form class="contact-form">
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" required placeholder="Enter your first name" minlength="3" maxlength="20"> 
+            </div>
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" placeholder="Enter your last name">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" required placeholder="Enter your email address">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" required minlength="8" maxlength="20">
+                </div>
+
+            <div class="form-group">
+                <label>Age</label>
+                <input type="number" placeholder="Enter your age" min="18" max="100">
+            </div>
+            <div class="form-group">
+                <label>Policy</label>
+                <input type="text" value="I agree to the terms and conditions" readonly disabled>
+            </div>
+            <div class="form-group">
+                <label>Type of Inquiry</label>
+                <select>
+                    <option>-- Please select --</option>
+                    <option>General Question</option>
+                    <option>Technical Support</option>
+                    <option selected>Billing</option>
+                    <option>Feedback</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="">
+                <p>Preferred Contact Method</p>
+                <input type="radio" name="contact"> Email
+                <input checked type="radio" name="contact"> Phone
+            </div>
+
+            <div class="">
+                <p>Hobbies</p>
+                <input type="checkbox"> Playing Cricket
+                <input checked type="checkbox"> Reading Books
+                <input type="checkbox"> Traveling
+                <input checked type="checkbox"> Cooking
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+
+           
+        </form>
+    </main>
+   
+       
+</body>
+</html>
